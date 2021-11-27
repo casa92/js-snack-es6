@@ -39,7 +39,7 @@ for ( i = 0; i < footballTeams.length; i++ ) {
     // ad ogni ciclo accedo al singolo team
     let thisTeam = footballTeams[i];
 
-    // METODO LUNGO
+    // // METODO LUNGO
 
     // creo una variabile e le assegno una chiave 
     // let thisPuntiFatti = footballTeams[i]['puntiFatti'];
@@ -49,7 +49,8 @@ for ( i = 0; i < footballTeams.length; i++ ) {
     // thisPuntiFatti = getRndInteger(15, 114);
     // thisFalliSubiti = getRndInteger(20, 50);
 
-    // METODO BREVE 
+    
+    // METODO NORMALE 
 
     //destrutturo l'oggetto e ad ogni ciclo assegno alle chiavi scelte un valore casuale
     let {nome, puntiFatti, falliSubiti} = thisTeam;
@@ -64,6 +65,17 @@ for ( i = 0; i < footballTeams.length; i++ ) {
 
     //pusho gli oggetti modificati nel nuovo array
     myTeams.push(thisTeam);
+
+
+    // //METODO BREVE
+
+    // let {nome, puntiFatti, falliSubiti} = thisTeam;
+    // myTeams.push(
+    //     thisTeam = {
+    //         nome,
+    //         falliSubiti: getRndInteger(20, 50),
+    //     }
+    // );
 }
 
 //output in console
