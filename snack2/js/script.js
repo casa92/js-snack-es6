@@ -60,7 +60,7 @@ for ( i = 0; i < footballTeams.length; i++ ) {
     //modifico l'oggetto ad ogni ciclo facendo comparire solo le chiavi selezionate
     thisTeam = {
         nome,
-        puntiFatti
+        falliSubiti
     };
 
     //pusho gli oggetti modificati nel nuovo array
