@@ -48,19 +48,21 @@ for ( i = 0; i < footballTeams.length; i++ ) {
     // assegno alla variabile creata un numero casuale 
     // thisPuntiFatti = getRndInteger(15, 114);
     // thisFalliSubiti = getRndInteger(20, 50);
-
+    // ///////////////////////////////////////////
     
     // METODO NORMALE 
 
-    //destrutturo l'oggetto e ad ogni ciclo assegno alle chiavi scelte un valore casuale
+    // destrutturo l'oggetto e ad ogni ciclo assegno alle chiavi scelte un valore casuale
     let {nome, puntiFatti, falliSubiti} = thisTeam;
     puntiFatti = getRndInteger(15, 114);
     falliSubiti = getRndInteger(20, 50); 
+    // //////////////////////////////////////////
+
 
     //modifico l'oggetto ad ogni ciclo facendo comparire solo le chiavi selezionate
     thisTeam = {
         nome,
-        falliSubiti
+        falliSubiti //thisFalliSubiti
     };
 
     //pusho gli oggetti modificati nel nuovo array
