@@ -9,7 +9,7 @@ const bikesArray =
 [
     {
         modello: 'prova1',
-        peso: 10
+        peso: 50
     },
 
     {
@@ -24,7 +24,7 @@ const bikesArray =
 ];
 
 //creo variabile a cui assegnare valore ad ogni ciclo
-let bikeWeightier = bikesArray[0];
+let bikePiuLeggera = bikesArray[0];
 
 //creo ciclo per accedere a tutti gli oggetti presenti nell'array
 for ( i = 0; i < bikesArray.length; i++ ) {
@@ -32,14 +32,14 @@ for ( i = 0; i < bikesArray.length; i++ ) {
     console.log(thisBike);
 
     //ad ogni ciclo, se l'oggetto avrà la chiave 'peso' minore, verrà inserite nella variabile dichiarata prima del ciclo    if (thisBike.peso > bikeWeightier.peso) {
-     if ( bikeWeightier < thisBike ) {
-        bikeWeightier = thisBike;
+     if ( thisBike.peso < bikePiuLeggera.peso) {
+        bikePiuLeggera = thisBike;
      }
    
 }
 
 //destrutturo l'oggetto 
-const {modello, peso} = bikeWeightier;
+const {modello, peso} = bikePiuLeggera;
 
 console.log(peso);
 
