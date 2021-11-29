@@ -31,9 +31,11 @@ for ( i = 0; i < bikesArray.length; i++ ) {
     let thisBike = bikesArray[i];
     console.log(thisBike);
 
-    //ad ogni ciclo, se l'oggetto avrà la chiave 'peso' maggiore, verrà inserite nella variabile dichiarata prima del ciclo    if (thisBike.peso > bikeWeightier.peso) {
+    //ad ogni ciclo, se l'oggetto avrà la chiave 'peso' minore, verrà inserite nella variabile dichiarata prima del ciclo    if (thisBike.peso > bikeWeightier.peso) {
+     if ( bikeWeightier < thisBike ) {
         bikeWeightier = thisBike;
-    }
+     }
+   
 }
 
 //destrutturo l'oggetto 
