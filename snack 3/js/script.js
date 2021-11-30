@@ -9,23 +9,28 @@
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 let newArray = [];
-let myArray2 = [];
+// let myArray2 = [];
 
 
 
-myArray.forEach((element, index, array) => {
-    // if ( index > 2 && index < 5 ) {
-    //     newArray.push(element);
-    // } else {
-    //     myArray2.push(element);
-    // }
-    (index > 2 && index < 5) ? newArray.push(element) : myArray2.push(element);
+// myArray.forEach((element, index, array) => {
+//     // if ( index > 2 && index < 5 ) {
+//     //     newArray.push(element);
+//     // } else {
+//     //     myArray2.push(element);
+//     // }
+//     (index > 2 && index < 5) ? newArray.push(element) : myArray2.push(element);
+// });
+
+
+
+
+const myArray2 = myArray.forEach((element, index, array) => {
+    let thisStudent;
+    if (index > 2 && index < 5) {
+        newArray.push(element);
+    }
 });
 
 console.log(newArray);
 console.log(myArray2);
-
-
-
-
-
