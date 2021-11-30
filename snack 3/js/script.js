@@ -19,7 +19,7 @@ let newArray = [];
 //     // } else {
 //     //     myArray2.push(element);
 //     // }
-//     (index > 2 && index < 5) ? newArray.push(element) : myArray2.push(element);
+//     (index > 2 && index < 5) ? newArray.push(element) : myArray2.push(element); // : null
 // });
 
 
